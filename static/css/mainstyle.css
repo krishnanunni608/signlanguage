@@ -1,0 +1,77 @@
+.logo{
+    width: 100px;
+    cursor: pointer;
+}
+    .navbar{
+    width: 85%;
+    height: 15%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.red{
+    position: relative;
+    overflow: hidden;
+}
+#sign{
+    color: #083b6e;
+    padding: 10px 25px;
+    background: transparent;
+    border: 1px solid rgb(106, 14, 14);
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+   }
+   body {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+ }
+ #george{
+     padding-bottom: 0px;
+     display: flex;
+     flex-wrap: wrap;
+     align-content: center;
+ }
+ #george1{
+    width: 85%;
+    height: 15%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    float: none;
+ }
+ #george2{
+    width: 85%;
+    height: 15%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    float: none;
+ }
+ #sub{
+    width: 342px;
+}
+#container {
+margin: 0px auto;
+width: 500px;
+height: 375px;
+border: 10px #333 solid;
+}
+#videoElement {
+width: 100%;
+height: 100%;
+background-color: #666;
+}
+.row:before {
+display: table;
+content: "default";
+}
+.row::before {
+    content: "";
+  }

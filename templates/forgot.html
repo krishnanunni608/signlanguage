@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-widyh,initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link type="text/css" rel="stylesheet" href="{{url_for('static',filename='css/forgot.css')}}">
+        <style>
+            body {
+                background-image: Url("{{url_for('static',filename='images/sign.jpg')}}");
+            }
+            h6{
+                text-align: right;
+            }
+        </style>
+    </head>
+    <body >
+            <div class="row">
+                <!--navbar for a standerdisation and signup/login routing-->
+                <div class="navbar">
+                    <img src="{{url_for('static',filename='images/logo.png')}}" class="logo">
+                        <a href="\signup"><button type="button" id="sign">Sign up</button></a>
+                </div>
+            </div>
+            <div class="row"  >
+                <div class="col-sm-12 col-lg-12 col-md-12 " id="george" style=" border-radius: 10px; height: 500px;">
+                    <h1 id="titl"> <b>Forgot Password</b></h1>
+                    <form method="POST"  id="for" class="form-inline">
+                    <h4 id="user" style="display: inline-block;">USERNAME :</h4>
+                    <input type="text" name="username3" class="form-controll" id="usr">
+                    <input type="submit"  name="submit1" class="btn btn-warning" id="sub" value="RESET">
+                    </h4></form>
+                </div>
+            </div>

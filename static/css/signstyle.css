@@ -1,0 +1,73 @@
+body {
+                
+    background-image: Url("{{url_for('static',filename='images/sign.jpeg')}}");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+ }
+#george {
+ padding-left: 100px;
+ padding-right: 100px;
+}
+#images {
+     border-radius: 10px;
+     object-fit: cover;
+     max-width: 100%;
+     width: 150%;
+     height: 500px;
+}
+.logo{
+ width: 100px;
+ cursor: pointer;
+}
+.navbar{
+ width: 85%;
+ height: 15%;
+ margin: auto;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ position: relative;
+
+}
+#sign{
+     color: #083b6e;
+     padding: 10px 25px;
+     background: transparent;
+     border: 1px solid rgb(106, 14, 14);
+     border-radius: 20px;
+     outline: none;
+     cursor: pointer;
+    }
+#titl{
+ color: rgb(238, 33, 5);
+ padding-top: 100px;
+ padding-bottom: 50px;
+ align-items: center;
+}
+#usr{
+ border-color: rgb(77, 235, 116);
+ background-position: 10px 10px;
+ background-repeat: no-repeat;
+ background-size: 7px;
+ background: scroll;
+ padding-left: 17px;
+ border-radius: 20px;
+ font-family: Roboto;
+ font-weight: normal;
+ width: 342px;
+
+}
+#sub{
+ width: 342px;
+}
+#user{
+     color: rgb(66, 8, 8);
+    }
+
+.row:before {
+display: table;
+content: none;
+}

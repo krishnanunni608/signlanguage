@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-widyh,initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link type="text/css" rel="stylesheet" href="{{url_for('static',filename='css/signstyle.css')}}">
+        <style>
+            body {
+                background-image: Url("{{url_for('static',filename='images/sign.jpg')}}");
+            }
+        </style>
+    </head>
+    <body>
+            <div class="row">
+                <!--navbar for a standerdisation and signup/login routing-->
+                <div class="navbar">
+                    <img src="{{url_for('static',filename='images/logo.png')}}" class="logo">
+                   <a href="\login"><button type="button" id="sign">Login</button></a>
+                </div>
+                </div>
+            </div>
+            <div class="row"  >
+                <!--div is for form controll purposes-->
+                <div class="col-sm-6 col-lg-6 col-md-6 " id="george" style=" border-radius: 10px; height: 500px;">
+                    <h1 id="titl">  <b>Sign Up</b></h1>
+                    <form  method="POST">
+                    <h4 id="user">Email</h4>
+                    <input type="text" name="username2" class="form-controll" id="usr">
+                    <h4 id="user">First Name</h4>
+                    <input type="text" name="firstname2" class="form-controll" id="usr">
+                    <h4 id="user">Last Name</h4>
+                    <input type="text" name="lastname2" class="form_controll" id="usr">
+                    <h4 id="user">Password</h4>
+                    <input type="password" name="password2" class="form-controll" id="usr">
+                    <h4>
+                    <input type="submit" name="submit2" class="btn btn-success" id="sub" value="Sign up">
+                    </h4></form>
+                </div>
+                <!-- empty div box is unused by its a cant for compony policy,description,advertisement purposes -->
+                <div class="col-sm-6 col-lg-6 col-md-6 " id="george2" style=" border-radius: 10px; height: 500px;"></div>
+            </div>
+    </body>
+</html>

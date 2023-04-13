@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-widyh,initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link type="text/css" rel="stylesheet" href="{{url_for('static',filename='css/login.css')}}">
+        <style>
+            body {
+                background-image: Url("{{url_for('static',filename='images/sign.jpg')}}");
+            }
+            h6{
+                text-align: right;
+            }
+        </style>
+    </head>
+    <body >
+            <div class="row">
+                <!--navbar for a standerdisation and signup/login routing-->
+                <div class="navbar">
+                    <img src="{{url_for('static',filename='images/logo.png')}}" class="logo">
+                        <a href="\signup"><button type="button" id="sign">Sign up</button></a>
+                </div>
+                <!--Both empty div box is unused by its a cant for compony policy,description,advertisement purposes -->
+                <div class="col-sm-4 col-lg-4 col-md-4 " id="george1" style=" border-radius: 10px; height: 500px;"></div>
+                <!--div is for form controll purposes-->
+                <div class="col-sm-4 col-lg-4 col-md-4 " id="george" style=" border-radius: 10px; height: 500px;">
+                    <h1 id="titl">  <b>Login</b></h1>
+                    <form  method="POST">
+                    <h4 id="user">Username</h4>
+                    <input type="text" name="username1" class="form-controll" id="usr">
+                    <h4 id="user">Password</h4>
+                    <input type="password" name="password1" class="form-controll" id="usr">
+                    <h4>
+                    <input type="submit"  name="submit1" class="btn btn-primary" id="sub" value="login">
+                    </h4></form>
+                    <h6   style="text-align: center; ;"> <a href="\forgot" style="display: inline-block;" class="text-info">forgot your password ?</a></h6>
+                </div>
+                <div class="col-sm-3 col-lg-4 col-md-3 " id="george2" style=" border-radius: 10px; height: 500px;"></div>
+            </div>
+    </body>
+</html>

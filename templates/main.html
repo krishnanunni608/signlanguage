@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-widyh,initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link type="text/css" rel="stylesheet" href="{{url_for('static',filename='css/mainstyle.css')}}">
+<style>
+    body {
+        background-image: Url("{{url_for('static',filename='images/sign.jpg')}}");
+    }
+</style>
+</head>
+<body>
+    <div class="row">
+        <div class="navbar">
+            <!--navbar for a standerdisation and signup/login routing-->
+            <img src="{{url_for('static',filename='images/logo.png')}}" class="logo">
+        </div>
+    </div>
+<div class="row">
+<div class="col-sm-12 col-lg-12 col-md-12 " id="george" style="  height: 387px;">
+<div id="container">
+    <!--video container-->
+	<img src="{{url_for('video_feed')}}" id="videoElement">
+</div></div></div><div class="row">
+    <!--button container which holds all the operational button-->
+<div class="col-sm-12 col-lg-12 col-md-12 " id="george1" style=" align-items: center; border-radius: 10px; height: 31px;">
+
+<a href="\cnnrec"><button type="button" class="btn btn-success">START</button></a>
+<a href="\main"><button class="btn btn-danger">END</button></a>
+</div></div>
+<!--<div class="col-sm-12 col-lg-12 col-md-12 " id="george2" style=" align-items: center; border-radius: 10px; height: 31px;">
+    <button type="button" class="btn btn-info" id="sub">primary converter</button>
+</div>-->
+<div class="col-sm-12 col-lg-12 col-md-12 " id="george2" style=" align-items: center; border-radius: 10px; height: 31px; padding-top: 30px;">
+    <a href="\stop"><button type="button" class="btn btn-warning" id="sub">exit</button></a>
+</div>
+</body>
+</html>

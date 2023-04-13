@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-widyh,initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link type="text/css" rel="stylesheet" href="{{url_for('static',filename='css/mainstyle.css')}}">
+<style>
+    body {
+        background-image: Url("{{url_for('static',filename='images/sign.jpg')}}");
+    }
+</style>
+</head>
+<body>
+    <div class="row">
+        <div class="navbar">
+            <!--navbar for a standerdisation and signup/login routing-->
+            <img src="{{url_for('static',filename='images/logo.png')}}" class="logo">
+        </div>
+    </div>
+<div class="row">
+<div class="col-sm-12 col-lg-12 col-md-12 " id="george" style="  height: 387px;">
+<div id="container">
+    <!--video container-->
+	<img src="{{url_for('rev_video')}}" id="videoElement">
+</div></div></div>
+            <div class="row"  >
+                <div class="col-sm-12 col-lg-12 col-md-12 " id="george" style=" border-radius: 10px; height: 213px;">
+                    <form  method="POST" class="form-inline">
+    <h4 id="user" style="display: inline-block; padding-right: 17px; padding-left: 17px;" >Enter the text to convert:</h4>
+    <input type="text" name="rev" class="form-controll" id="usr">
+&nbsp;<input type="submit"style="display: inline-block;  name="submit1" class="w3-button w3-teal" id="sub" value="convert">
+    </h4></form></div></div>
+</body>
+</html>
